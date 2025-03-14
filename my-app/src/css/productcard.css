@@ -1,0 +1,38 @@
+.product-name {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Số dòng hiển thị */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: normal; /* Cho phép có nhiều dòng */
+}
+
+.card-custom {
+  border-radius: 12px; /* Làm tròn các góc của thẻ sản phẩm */
+  transition: transform 0.2s; /* Hiệu ứng hover */
+}
+
+.card-custom:hover {
+  transform: scale(1.05); /* Tăng kích thước nhẹ khi hover */
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column; /* Chia nhỏ các phần tử theo cột */
+  justify-content: space-between; /* Đảm bảo khoảng cách đều giữa tên sản phẩm và giá */
+}
+
+.price_sale {
+  display: flex; /* Sử dụng flexbox cho giá */
+  align-items: center; /* Căn giữa các phần tử */
+  justify-content: flex-start; /* Căn trái giá trong phần giá */
+}
+
+.price {
+  margin-right: 10px; /* Khoảng cách giữa giá khuyến mãi và giá gốc */
+}
+
+/* Đặt kiểu chữ cho giá */
+.price span, .price del {
+  font-weight: bold; /* Đậm giá */
+}
