@@ -50,6 +50,7 @@ import ShowTopic from './pages/topic/ShowTopic';
 import ShowOrder from './pages/order/ShowOrder';
 import ShowContact from './pages/contact/ShowContact';
 import ShowUser from './pages/user/ShowUser';
+import ChatbotManager from './pages/chatbot/chatbot';
 import './App.css';
 import '../src/css/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -145,6 +146,7 @@ function App() {
     <Route path="user/edit/:id" element={<ProtectedRoute><EditUser /></ProtectedRoute>} />
     <Route path="user/trash" element={<ProtectedRoute><TrashUser /></ProtectedRoute>} />
     <Route path="user/show/:id" element={<ProtectedRoute><ShowUser /></ProtectedRoute>} />
+    <Route path="deepseek" element={<ProtectedRoute><ChatbotManager /></ProtectedRoute>} />
     
 </Route>
 

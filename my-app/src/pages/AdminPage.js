@@ -76,7 +76,7 @@ function AdminPage() {
                     {/* Thanh người dùng */}
                     <div className="user-panel mt-3 pb-3 mb-3 d-flex">
                         <div className="image">
-                            <img src="/bootstrap/dist/img/user2-160x160.jpg" className="img-circle elevation-2" alt="User Image" />
+                            <img src="https://imgcdn.stablediffusionweb.com/2025/4/11/a28e10c8-bd4e-45ed-99be-4785d20ab752.jpg" className="img-circle elevation-2" alt="User Image" />
                         </div>
                         <div className="info">
                             <a href="#" className="d-block">LeTranThaiNguu</a>
@@ -172,6 +172,15 @@ function AdminPage() {
                                     <i className="nav-icon fas fa-user-tie"></i>
                                     <p>
                                         Thành viên
+                                    </p>
+                                </a>
+
+                            </li>
+                            <li className="nav-item">
+                            <a href="/admin/deepseek" className="nav-link">
+                                    <i className="nav-icon fa-solid fa-robot"></i>
+                                    <p>
+                                        ChatBot
                                     </p>
                                 </a>
 

@@ -6,58 +6,58 @@ const Footer = ({ listMenu }) => {
     <footer id="footer-container" className="footer bg-dark text-light p-4">
       <div className="container">
         <div className="row">
-          {/* Shop Information */}
+          {/* Thông tin cửa hàng */}
           <div className="col-md-4 mb-4">
-            <h5>About Our Shop</h5>
+            <h5>Về cửa hàng</h5>
             <p>
-              We are a leading fashion store offering a wide range of stylish
-              clothing and accessories. Our mission is to provide quality
-              fashion at affordable prices.
+              Chúng tôi là cửa hàng thời trang hàng đầu, cung cấp nhiều sản phẩm
+              quần áo và phụ kiện thời trang. Sứ mệnh của chúng tôi là mang đến
+              sản phẩm chất lượng với giá cả phải chăng.
             </p>
             <p>
               © Bản quyền thuộc về{" "}
               <a href="/" className="text-light">
                 Thái Ngưu
               </a>{" "}
-              All rights reserved
+              Mọi quyền được bảo lưu
             </p>
           </div>
 
-          {/* Footer Links */}
+          {/* Liên kết nhanh */}
           <div className="col-md-4 mb-4">
-            <h5>Quick Links</h5>
+            <h5>Liên kết nhanh</h5>
             <ul className="list-unstyled">
               <li>
                 <a href="/shop" className="text-light">
-                  Shop
+                  Cửa hàng
                 </a>
               </li>
               <li>
                 <a href="/about" className="text-light">
-                  About Us
+                  Giới thiệu
                 </a>
               </li>
               <li>
                 <a href="/contact" className="text-light">
-                  Contact
+                  Liên hệ
                 </a>
               </li>
               <li>
                 <a href="/faq" className="text-light">
-                  FAQ
+                  Câu hỏi thường gặp
                 </a>
               </li>
               <li>
                 <a href="/returns" className="text-light">
-                  Returns & Exchanges
+                  Chính sách đổi/trả
                 </a>
               </li>
             </ul>
           </div>
 
-          {/* Contact & Social Media */}
+          {/* Liên hệ & Mạng xã hội */}
           <div className="col-md-4 mb-4">
-            <h5>Contact Us</h5>
+            <h5>Liên hệ</h5>
             <p>
               <i className="fas fa-phone-alt"></i> +84 123 456 789
             </p>
@@ -78,20 +78,20 @@ const Footer = ({ listMenu }) => {
           </div>
         </div>
 
-        {/* Newsletter Subscription */}
+        {/* Đăng ký nhận bản tin */}
         <div className="row mt-4">
           <div className="col-md-6">
-            <h5>Subscribe to our Newsletter</h5>
+            <h5>Đăng ký nhận tin mới</h5>
             <form className="newsletter-form">
               <div className="input-group">
                 <input
                   type="email"
                   className="form-control"
-                  placeholder="Enter your email"
+                  placeholder="Nhập email của bạn"
                 />
                 <div className="input-group-append">
                   <button className="btn btn-primary" type="submit">
-                    Subscribe
+                    Đăng ký
                   </button>
                 </div>
               </div>
@@ -100,7 +100,7 @@ const Footer = ({ listMenu }) => {
           <div className="col-md-6 text-right">
             <img
               src="https://dangkywebvoibocongthuong.com/wp-content/uploads/2021/11/logo-da-thong-bao-bo-cong-thuong.png"
-              alt="Footer Image"
+              alt="Đã thông báo Bộ Công Thương"
               className="img-fluid"
               style={{ width: "150px" }}
             />

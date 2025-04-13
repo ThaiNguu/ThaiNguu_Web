@@ -65,7 +65,7 @@ const MainMenu = () => {
                 aria-hidden="true"
                 style={{ color: "#009900", marginRight: "5px" }}
               ></i>
-              79 Stores Nationwide
+              79 Cửa hàng trên Toàn Quốc
             </a>
             <Link
               to="/contact"
@@ -95,7 +95,7 @@ const MainMenu = () => {
                 aria-hidden="true"
                 style={{ color: "#2ed573", marginRight: "5px" }}
               ></i>
-              Help Center
+              Trung tâm hỗ trợ
             </a>
             <a href="#" className="d-flex align-items-center mx-2">
               <i
@@ -103,7 +103,7 @@ const MainMenu = () => {
                 aria-hidden="true"
                 style={{ color: "#ffa502", marginRight: "5px" }}
               ></i>
-              Careers
+              Quan tâm
             </a>
           </div>
         </div>
@@ -113,7 +113,7 @@ const MainMenu = () => {
           <div className="logo me-3">
             <Link to="/">
               <img
-                src="https://media-fmplus.cdn.vccloud.vn/uploads/gui/4795312b-8e83-4876-b497-340f9c755df0.png"
+                src="https://cdn.haitrieu.com/wp-content/uploads/2022/05/Logo-FM-1024x552.png"
                 alt="Logo"
               />
             </Link>
@@ -168,47 +168,47 @@ const MainMenu = () => {
                 </Link>
 
                 {user ? (
-  <div
-    className="dropdown"
-    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
-  >
-    <div className="user-info-wrapper">
-      <img
-        src={`http://localhost:8000/images/users/${user.image}`}
-        alt={user.name}
-        className="account-page-img"
-      />
-      <span className="dropdown-toggle" role="button">
-        Xin chào, {userName}
-      </span>
-    </div>
-    
-    {isDropdownOpen && (
-      <div className="dropdown-menu show">
-        <Link to="/account" className="dropdown-item">
-          Thông tin tài khoản
-        </Link>
-        <Link to="/order-history" className="dropdown-item">
-          Lịch sử đơn hàng
-        </Link>
-        <button
-          onClick={handleLogout}
-          className="dropdown-item text-danger"
-        >
-          <strong>Đăng xuất</strong>
-        </button>
-      </div>
-    )}
-  </div>
-) : (
-  <div className="d-flex align-items-center">
-    <Link to="/login" className="me-2">
-      <i className="fa fa-user" aria-hidden="true"></i> ĐĂNG NHẬP
-    </Link>
-    <Link to="/register">ĐĂNG KÝ</Link>
-  </div>
-)}
+                  <div
+                    className="dropdown"
+                    onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                  >
+                    <div className="user-info-wrapper">
+                      <img
+                        src={`http://localhost:8000/images/users/${user.image}`}
+                        alt={user.name}
+                        className="account-page-img"
+                      />
+                      <span className="dropdown-toggle" role="button">
+                        Xin chào, {userName}
+                      </span>
+                    </div>
 
+                    {isDropdownOpen && (
+                      <div className="dropdown-menu show">
+                        <Link to="/account" className="dropdown-item">
+                          Thông tin tài khoản
+                        </Link>
+                        <Link to="/order-history" className="dropdown-item">
+                          Lịch sử đơn hàng
+                        </Link>
+                        <button
+                          onClick={handleLogout}
+                          className="dropdown-item text-danger"
+                        >
+                          <strong>Đăng xuất</strong>
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <div className="d-flex align-items-center">
+                    <Link to="/login" className="me-2">
+                      <i className="fa fa-user" aria-hidden="true"></i> ĐĂNG
+                      NHẬP
+                    </Link>
+                    <Link to="/register">ĐĂNG KÝ</Link>
+                  </div>
+                )}
               </div>
             </div>
           </div>
